@@ -19,6 +19,8 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "string.h"
+#include "app.h"
+#include "image.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -122,6 +124,11 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
+  edge_detect_init();
+  edge_detect(img_bin);
+  edge_detect_done();
+
   while (1)
   {
     /* USER CODE END WHILE */
